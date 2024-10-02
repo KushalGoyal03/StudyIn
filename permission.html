@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Role Permission Checker</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      .form-container {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+
+      .form-container label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      .form-container select,
+      .form-container button {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .result {
+        font-size: 1.2em;
+        margin-top: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Check Role Permissions</h1>
+
+    <div class="form-container">
+      <form id="permissionForm">
+        <label for="role">Select Role:</label>
+        <select id="role">
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="admin">Admin</option>
+        </select>
+
+        <label for="task">Select Task:</label>
+        <select id="task">
+          <option value="read-timetable">Read Timetable</option>
+          <option value="write-timetable">Write Timetable</option>
+          <option value="read-attendance">Read Attendance</option>
+          <option value="write-attendance">Write Attendance</option>
+          <option value="read-notes">Read Notes</option>
+          <option value="write-notes">Write Notes</option>
+        </select>
+
+        <button type="submit">Check Permission</button>
+      </form>
+
+      <div id="result" class="result"></div>
+    </div>
+
+    <script src="permissions.js"></script>
+  </body>
+</html>
