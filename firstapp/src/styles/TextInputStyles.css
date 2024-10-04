@@ -1,0 +1,72 @@
+/* TextInputStyles.css */
+
+/* General Input Styles */
+input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 30%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+/* Filled Input Style */
+.filled-input {
+  background-color: #f0f0f0;
+}
+
+/* Outline Input Style */
+.outline-input {
+  border: 2px solid #007bff;
+}
+
+/* Disabled Input Style */
+.disabled-input {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+/* Password Input without Icon */
+.password-no-icon {
+  padding: 10px;
+  width: 30%;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+/* Validated Input Styles */
+.validated-input {
+  padding: 10px;
+  width: 30%;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+.validated-input.valid {
+  border-color: green;
+}
+
+.validated-input.invalid {
+  border-color: red;
+}
+
+/* Password Input with Icon Styles */
+.password-input-with-icon {
+  display: flex;
+  align-items: center;
+}
+
+.password-input-with-icon button {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Currency Input Styles */
+.currency-input {
+  display: flex;
+  align-items: center;
+}
+
+.currency-input span {
+  margin-right: 5px;
+}
