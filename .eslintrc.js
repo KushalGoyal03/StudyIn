@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   env: {
     node: true, // Enable Node.js global variables and Node.js scoping
