@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "echo Lint"
   },
   "devDependencies": {
-    "husky": "^8.0.0"
+    "husky": "^8.0.3"
   }
 }
